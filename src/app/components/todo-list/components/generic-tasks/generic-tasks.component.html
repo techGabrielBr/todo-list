@@ -1,0 +1,23 @@
+<div class="task-list">
+  <h3>{{title}}</h3>
+
+  <table class="table table-striped table-bordered">
+    <tbody>
+      <tr *ngFor="let task of tasks$ | async">
+        <td class="d-flex align-items-center justify-content-between">
+          {{task.titulo}}
+
+          <div class="icons d-flex justify-content-end pr-2">
+            <i class="fa-solid fa-play" *ngIf="!task.iniciada" (click)="init(task)"></i>
+            <i class="fa-solid fa-arrow-rotate-left mr-4" *ngIf="task.iniciada || task.finalizada"
+              (click)="back(task)"></i>
+            <i class="fa-solid fa-trash" *ngIf="task.finalizada" (click)="remove(task)"></i>
+            <i class="fa-solid fa-check" *ngIf="task.iniciada && !task.finalizada"
+              (click)="finalize(task)"></i>
+          </div>
+        </td>
+      </tr>
+    </tbody>
+  </table>
+</div>
+

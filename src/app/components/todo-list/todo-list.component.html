@@ -1,0 +1,19 @@
+<div class="row no-gutters">
+  <div class="col-12 px-3 pt-3">
+    <div class="input-group mb-3">
+      <input type="text" class="form-control" [(ngModel)]="taskTitle" placeholder="Nome da tarefa">
+      <div class="input-group-append">
+        <button class="btn btn-outline-secondary" (click)="create()" type="button">Adicionar</button>
+      </div>
+    </div>
+  </div>
+  <div class="col-lg-4 p-3">
+    <app-tasks></app-tasks>
+  </div>
+  <div class="col-lg-4 p-3">
+    <app-tasks-iniciadas></app-tasks-iniciadas>
+  </div>
+  <div class="col-lg-4 p-3">
+    <app-tasks-finalizadas></app-tasks-finalizadas>
+  </div>
+</div>

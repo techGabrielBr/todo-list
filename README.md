@@ -1,6 +1,16 @@
-# TaskList
+# Todo List
 
 This project was generated with [Angular CLI](https://github.com/angular/angular-cli) version 12.1.4.
+
+## Objetivo
+
+Demonstrar o uso da biblioteca RxJs para o gerenciamento de estado em uma aplicação Angular.
+
+## Json server
+
+Run: `json-server --watch todo.json` <br>
+Docs: `https://github.com/typicode/json-server` <br>
+Endpoints: `http://localhost:3000/tasks`
 
 ## Development server
 
