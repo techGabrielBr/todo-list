@@ -7,46 +7,46 @@
       "finalizada": true
     },
     {
-      "id": 2,
-      "titulo": "Fazer postagem no Linkedin",
-      "iniciada": true,
-      "finalizada": false
-    },
-    {
-      "titulo": "Implementar testes unitários",
-      "iniciada": false,
-      "finalizada": false,
-      "id": 3
-    },
-    {
-      "titulo": "Criar um novo componente",
-      "iniciada": false,
-      "finalizada": false,
-      "id": 4
-    },
-    {
       "titulo": "Refatorar código",
-      "iniciada": false,
+      "iniciada": true,
       "finalizada": false,
       "id": 5
     },
     {
-      "titulo": "Criar um novo service",
-      "iniciada": false,
-      "finalizada": false,
-      "id": 6
-    },
-    {
       "titulo": "Organizar os módulos da aplicação",
       "iniciada": true,
-      "finalizada": false,
+      "finalizada": true,
       "id": 7
     },
     {
-      "titulo": "Instalar o Bootstrap v4.6 ",
+      "titulo": "Instalar dependências",
+      "iniciada": true,
+      "finalizada": false,
+      "id": 10
+    },
+    {
+      "titulo": "Criar novo componente",
+      "iniciada": true,
+      "finalizada": false,
+      "id": 11
+    },
+    {
+      "titulo": "Criar novo service",
+      "iniciada": false,
+      "finalizada": false,
+      "id": 12
+    },
+    {
+      "titulo": "Fazer postagem no Linkedin",
+      "iniciada": false,
+      "finalizada": false,
+      "id": 14
+    },
+    {
+      "titulo": "Arrumar a impressora",
       "iniciada": true,
       "finalizada": true,
-      "id": 8
+      "id": 15
     }
   ]
 }
