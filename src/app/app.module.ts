@@ -7,11 +7,13 @@ import { TodoListComponent } from './components/todo-list/todo-list.component';
 import { NavbarComponent } from './components/navbar/navbar.component';
 import { NgModule } from '@angular/core';
 import { BrowserModule } from '@angular/platform-browser';
-import { HttpClientModule } from '@angular/common/http';
+import { HTTP_INTERCEPTORS, HttpClientModule } from '@angular/common/http';
 
 import { AppRoutingModule } from './app-routing.module';
 import { AppComponent } from './app.component';
 import { FormsModule } from '@angular/forms';
+import { LoadingInterceptor } from './interceptors/loading.interceptor';
+import { LoadingComponent } from './components/todo-list/components/loading/loading.component';
 
 @NgModule({
   declarations: [
@@ -21,7 +23,8 @@ import { FormsModule } from '@angular/forms';
     TasksComponent,
     GenericTasksComponent,
     TasksFinalizadasComponent,
-    TasksIniciadasComponent
+    TasksIniciadasComponent,
+    LoadingComponent
   ],
   imports: [
     BrowserModule,
@@ -30,7 +33,12 @@ import { FormsModule } from '@angular/forms';
     FormsModule
   ],
   providers: [
-    Store
+    Store,
+    {
+      provide: HTTP_INTERCEPTORS,
+      useClass: LoadingInterceptor,
+      multi: true
+    }
   ],
   bootstrap: [AppComponent]
 })

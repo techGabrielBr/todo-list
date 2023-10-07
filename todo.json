@@ -26,7 +26,7 @@
     },
     {
       "titulo": "Criar novo componente",
-      "iniciada": true,
+      "iniciada": false,
       "finalizada": false,
       "id": 11
     },
@@ -44,8 +44,8 @@
     },
     {
       "titulo": "Arrumar a impressora",
-      "iniciada": true,
-      "finalizada": true,
+      "iniciada": false,
+      "finalizada": false,
       "id": 15
     }
   ]
